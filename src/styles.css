@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Ant Design Dark Theme Overrides */
+.ant-input {
+  background-color: #1f1f1f !important;
+  border-color: #303030 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.ant-input::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.ant-input:hover,
+.ant-input:focus {
+  border-color: #1890ff !important;
+}
+
+.ant-btn {
+  border-color: #303030 !important;
+}
+
+.ant-card {
+  background-color: #1f1f1f !important;
+  border-color: #303030 !important;
+}
+
+.ant-card-head {
+  border-bottom-color: #303030 !important;
+}
+
+.ant-progress-bg {
+  background-color: #1890ff !important;
+}
+
+.ant-progress-success-bg {
+  background-color: #52c41a !important;
+}
+
+.ant-tooltip {
+  max-width: 300px !important;
+}
+
+.ant-tooltip-inner {
+  background-color: #1f1f1f !important;
+  border: 1px solid #303030 !important;
+}
+
+/* Custom Styles */
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+}
+
+.ant-card:hover .play-overlay {
+  opacity: 1 !important;
+}
+
+.ant-card-meta-title {
+  white-space: normal !important;
+  margin-bottom: 8px !important;
+}
+
+.ant-modal-content {
+  background-color: #1f1f1f !important;
+}
+
+.ant-modal-header {
+  background-color: #1f1f1f !important;
+}
+
+.ant-modal-title {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.ant-modal-close {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.ant-modal-close:hover {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.ant-select-dropdown {
+  background-color: #1f1f1f !important;
+}
+
+.ant-select-item {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.ant-select-item-option-selected {
+  background-color: #177ddc !important;
+}
+
+.ant-select-item-option-active {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.ant-card-hoverable:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
