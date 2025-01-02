@@ -64,19 +64,36 @@ cp server/config.example.js server/config.js
 nano server/config.js
 ```
 
-5. Start the backend server:
+5. Start both services using the provided script:
 ```bash
-cd server
-npm start
+./start.sh
 ```
 
-6. Start the frontend development server:
+The application will be available at `http://localhost:5173`. The services will run in the background and logs will be available in the `logs` directory.
+
+To stop the services:
 ```bash
-# In the root directory
-npm run dev
+./stop.sh
 ```
 
-The application will be available at `http://localhost:5173`
+### Service Management Scripts
+
+Two scripts are provided to manage the application services:
+
+- **start.sh**
+  - Starts both backend and frontend servers in the background
+  - Creates PID files for process tracking
+  - Logs output to `logs/backend.log` and `logs/frontend.log`
+  - Verifies services are running properly
+  - Provides status output
+
+- **stop.sh**
+  - Gracefully stops all services
+  - Cleans up PID and log files
+  - Falls back to force kill if needed
+  - Ensures complete cleanup
+
+The services will continue running without requiring the terminal to stay open. You can monitor the services through the log files in the `logs` directory.
 
 ## Configuration
 
@@ -152,7 +169,10 @@ ytlib/
 │   ├── index.js      # Express server setup
 │   ├── config.js     # Server configuration (gitignored)
 │   └── config.example.js  # Configuration template
-└── downloads/         # Default video storage location (gitignored)
+├── downloads/         # Default video storage location (gitignored)
+├── logs/             # Service logs directory (gitignored)
+├── start.sh          # Service startup script
+└── stop.sh           # Service shutdown script
 ```
 
 ### Adding Features
